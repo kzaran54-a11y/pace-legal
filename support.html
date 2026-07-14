@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pace &#8212; Support</title>
+<style>
+:root{--ground:#f4f7f7;--surface:#fff;--sunk:#eef3f3;--line:#d8e0e0;--ink:#0f1a19;
+--muted:#5c6e6c;--faint:#849795;--accent:#0d9488;--violet:#6d5ce0;
+--mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+--sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;}
+@media(prefers-color-scheme:dark){:root{--ground:#0b0d12;--surface:#141a21;--sunk:#10151b;
+--line:#232d33;--ink:#e7efee;--muted:#8ba09e;--faint:#5f7472;--accent:#2dd4bf;--violet:#8b7cf6;}}
+:root[data-theme="light"]{--ground:#f4f7f7;--surface:#fff;--sunk:#eef3f3;--line:#d8e0e0;
+--ink:#0f1a19;--muted:#5c6e6c;--faint:#849795;--accent:#0d9488;--violet:#6d5ce0;}
+:root[data-theme="dark"]{--ground:#0b0d12;--surface:#141a21;--sunk:#10151b;--line:#232d33;
+--ink:#e7efee;--muted:#8ba09e;--faint:#5f7472;--accent:#2dd4bf;--violet:#8b7cf6;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);
+line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:clamp(28px,6vw,72px) clamp(18px,5vw,32px) 80px}
+.mast{display:flex;align-items:center;gap:14px;margin-bottom:26px}
+.mast .sub{font-family:var(--mono);font-size:11px;letter-spacing:.18em;
+text-transform:uppercase;color:var(--accent)}
+.mast h1{font-size:clamp(25px,5vw,33px);margin:2px 0 0;letter-spacing:-.02em;
+font-weight:700;text-wrap:balance}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:34px}
+nav a{font-family:var(--mono);font-size:12px;text-decoration:none;color:var(--muted);
+background:var(--surface);border:1px solid var(--line);padding:7px 13px;border-radius:999px}
+nav a:hover{color:var(--ink);border-color:var(--accent)}
+nav a[aria-current="page"]{color:var(--accent);border-color:var(--accent);background:transparent}
+nav a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.doc h2{font-size:19px;margin:38px 0 12px;letter-spacing:-.01em;text-wrap:balance;
+padding-top:16px;border-top:1px solid var(--line)}
+.doc h2:first-of-type{border-top:none;padding-top:0}
+.doc h3{font-size:16px;margin:24px 0 8px}
+.doc p,.doc li{color:var(--muted);font-size:15px;max-width:66ch}
+.doc strong{color:var(--ink);font-weight:600}
+.doc a{color:var(--accent)}
+.doc ul{padding-left:20px}
+.doc li{margin:6px 0}
+.doc hr{border:none;border-top:1px solid var(--line);margin:32px 0}
+.doc code{font-family:var(--mono);font-size:.88em;background:var(--sunk);
+border:1px solid var(--line);padding:1px 5px;border-radius:5px;color:var(--ink)}
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:12px;
+background:var(--surface);margin:18px 0}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line)}
+th{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+color:var(--faint);font-weight:600}
+td{color:var(--muted)} tr:last-child td{border-bottom:none}
+footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);
+display:flex;flex-wrap:wrap;gap:8px 20px;font-family:var(--mono);font-size:12px;color:var(--faint)}
+footer a{color:var(--faint);text-decoration:none}
+footer a:hover{color:var(--accent)}
+
+  :root {
+    --ground:#f4f7f7; --surface:#ffffff; --sunk:#eef3f3;
+    --line:#d8e0e0; --ink:#0f1a19; --muted:#5c6e6c; --faint:#849795;
+    --accent:#0d9488; --accent-ink:#ffffff; --violet:#6d5ce0;
+    --mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground:#0b0d12; --surface:#141a21; --sunk:#10151b;
+      --line:#232d33; --ink:#e7efee; --muted:#8ba09e; --faint:#5f7472;
+      --accent:#2dd4bf; --accent-ink:#06201c; --violet:#8b7cf6;
+    }
+  }
+  :root[data-theme="light"] {
+    --ground:#f4f7f7; --surface:#ffffff; --sunk:#eef3f3;
+    --line:#d8e0e0; --ink:#0f1a19; --muted:#5c6e6c; --faint:#849795;
+    --accent:#0d9488; --accent-ink:#ffffff; --violet:#6d5ce0;
+  }
+  :root[data-theme="dark"] {
+    --ground:#0b0d12; --surface:#141a21; --sunk:#10151b;
+    --line:#232d33; --ink:#e7efee; --muted:#8ba09e; --faint:#5f7472;
+    --accent:#2dd4bf; --accent-ink:#06201c; --violet:#8b7cf6;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin:0; background: var(--ground); color: var(--ink);
+    font-family: var(--sans); line-height:1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin:0 auto; padding: clamp(28px,6vw,72px) clamp(18px,5vw,32px) 72px; }
+
+  /* ---- masthead ---- */
+  .mast { display:flex; align-items:center; gap:14px; }
+  .mark { flex:none; }
+  .mast h1 {
+    font-size: clamp(26px,5vw,34px); margin:0; letter-spacing:-.02em;
+    font-weight:700; text-wrap:balance;
+  }
+  .mast .sub { font-family:var(--mono); font-size:11px; letter-spacing:.18em;
+    text-transform:uppercase; color:var(--accent); margin-top:3px; }
+
+  .lede { color:var(--muted); font-size:16px; margin:22px 0 0; max-width:60ch; }
+
+  /* ---- primary contact ---- */
+  .contact {
+    display:flex; flex-wrap:wrap; align-items:center; gap:14px 18px;
+    margin-top:26px; padding:20px 22px;
+    background:var(--surface); border:1px solid var(--line); border-radius:14px;
+  }
+  .contact .who { flex:1 1 220px; }
+  .contact .lbl { font-family:var(--mono); font-size:10.5px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--faint); }
+  .contact .val { font-size:17px; font-weight:600; margin-top:2px; }
+  a.btn {
+    display:inline-block; text-decoration:none; white-space:nowrap;
+    background:var(--accent); color:var(--accent-ink);
+    font-family:var(--mono); font-size:13px; font-weight:700;
+    padding:11px 18px; border-radius:999px;
+  }
+  a.btn:hover { filter:brightness(1.08); }
+  a.btn:focus-visible { outline:2px solid var(--violet); outline-offset:3px; }
+  .reply { font-size:13px; color:var(--muted); margin-top:10px; }
+
+  /* ---- section headings ---- */
+  h2 {
+    font-family:var(--mono); font-size:11px; letter-spacing:.18em; text-transform:uppercase;
+    color:var(--faint); font-weight:600;
+    margin:52px 0 14px; padding-bottom:9px; border-bottom:1px solid var(--line);
+  }
+
+  /* ---- fast answers ---- */
+  .fast { display:grid; gap:12px; }
+  .card {
+    background:var(--surface); border:1px solid var(--line); border-radius:14px;
+    padding:18px 20px;
+  }
+  .card h3 { margin:0 0 8px; font-size:17px; letter-spacing:-.01em; }
+  .card p { margin:0; color:var(--muted); font-size:14.5px; }
+  .steps { margin:10px 0 0; padding:0; list-style:none;
+    display:flex; flex-wrap:wrap; align-items:center; gap:6px 8px; }
+  .steps li { font-family:var(--mono); font-size:12px; color:var(--ink);
+    background:var(--sunk); border:1px solid var(--line);
+    padding:5px 9px; border-radius:7px; }
+  .steps li.arrow { background:none; border:none; color:var(--faint); padding:0; }
+
+  /* ---- faq ---- */
+  .faq { display:grid; gap:0; }
+  details {
+    border-bottom:1px solid var(--line); padding:4px 0;
+  }
+  summary {
+    cursor:pointer; list-style:none; padding:15px 30px 15px 0; position:relative;
+    font-size:16px; font-weight:600;
+  }
+  summary::-webkit-details-marker { display:none; }
+  summary::after {
+    content:"+"; position:absolute; right:4px; top:50%; transform:translateY(-50%);
+    font-family:var(--mono); color:var(--accent); font-size:17px; font-weight:400;
+  }
+  details[open] summary::after { content:"\2013"; }
+  summary:focus-visible { outline:2px solid var(--accent); outline-offset:2px; border-radius:5px; }
+  details .body { padding:0 0 16px; color:var(--muted); font-size:14.5px; max-width:62ch; }
+  details .body p { margin:0 0 10px; }
+  details .body p:last-child { margin-bottom:0; }
+  details .body strong { color:var(--ink); font-weight:600; }
+  code { font-family:var(--mono); font-size:.9em; background:var(--sunk);
+    border:1px solid var(--line); padding:1px 5px; border-radius:5px; }
+
+  a { color:var(--accent); }
+  footer {
+    margin-top:56px; padding-top:20px; border-top:1px solid var(--line);
+    display:flex; flex-wrap:wrap; gap:8px 20px; align-items:center;
+    font-family:var(--mono); font-size:12px; color:var(--faint);
+  }
+  footer a { text-decoration:none; }
+  footer a:hover { text-decoration:underline; }
+  @media (prefers-reduced-motion: no-preference) {
+    a.btn, summary { transition: filter .15s ease, color .15s ease; }
+  }
+</style></head><body>
+<div class="wrap">
+  
+  <nav><a href="index.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="support.html" aria-current="page">Support</a></nav>
+  <main>
+  <header class="mast">
+    <!-- The Pace mark: an orbit, a moving body, a still centre. -->
+    <svg class="mark" width="52" height="52" viewBox="0 0 52 52" aria-hidden="true">
+      <circle cx="26" cy="26" r="16" fill="none" stroke="var(--accent)" stroke-width="3.4" opacity=".9"/>
+      <circle cx="26" cy="26" r="9.5" fill="none" stroke="var(--violet)" stroke-width="1.2" opacity=".55"/>
+      <circle cx="36" cy="16" r="4.6" fill="var(--accent)"/>
+      <circle cx="26" cy="26" r="2.9" fill="var(--ink)"/>
+    </svg>
+    <div>
+      <div class="sub">Support</div>
+      <h1>Pace</h1>
+    </div>
+  </header>
+
+  <p class="lede">
+    Something not working, or a question about your subscription or your data?
+    Write to us &#8212; a real person reads every message.
+  </p>
+
+  <div class="contact">
+    <div class="who">
+      <div class="lbl">Email support</div>
+      <div class="val">support@pacehq.com</div>
+    </div>
+    <a class="btn" href="mailto:support@pacehq.com?subject=Pace%20support">Email us</a>
+  </div>
+  <p class="reply">We reply within <strong>2 business days</strong>. Telling us your device and iOS version gets you a faster answer.</p>
+
+  <h2>Billing</h2>
+  <div class="fast">
+    <div class="card">
+      <h3>Cancel Pace Plus</h3>
+      <p>Apple handles all billing, so cancelling happens in your Apple settings &#8212; we can't do it for you.</p>
+      <ul class="steps">
+        <li>Settings app</li><li class="arrow">&#8594;</li>
+        <li>your name</li><li class="arrow">&#8594;</li>
+        <li>Subscriptions</li><li class="arrow">&#8594;</li>
+        <li>Pace</li><li class="arrow">&#8594;</li>
+        <li>Cancel</li>
+      </ul>
+      <p style="margin-top:12px">On a free trial? Cancel at least <strong>24 hours before it ends</strong> or the first payment goes through.</p>
+    </div>
+    <div class="card">
+      <h3>Get your subscription back</h3>
+      <p>New phone, or reinstalled the app? Nothing is lost &#8212; Apple remembers what you bought.</p>
+      <ul class="steps">
+        <li>Pace</li><li class="arrow">&#8594;</li>
+        <li>Settings</li><li class="arrow">&#8594;</li>
+        <li>Restore purchases</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Your data</h2>
+  <div class="fast">
+    <div class="card">
+      <h3>Delete everything</h3>
+      <p><strong>Settings &#8594; Delete account</strong> permanently erases your account and everything stored in the cloud, along with the copy on your phone. It cannot be undone.</p>
+      <p style="margin-top:10px"><strong>Settings &#8594; Delete all data</strong> wipes only this device and leaves any account intact.</p>
+    </div>
+  </div>
+
+  <h2>Questions</h2>
+  <div class="faq">
+    <details>
+      <summary>What do I get with Pace Plus?</summary>
+      <div class="body">
+        <p>The planner is <strong>free forever</strong> &#8212; your day, calendar, tasks, notes, journal, nutrition and Pulse never cost anything.</p>
+        <p>Plus unlocks the deep stuff: <strong>Month and Year recaps</strong>, month-vs-month nutrition, file attachments in shared notes, and unlimited collaborative notes. &#163;1.99 a month or &#163;14.99 a year, after a 7-day free trial.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>I want a refund</summary>
+      <div class="body">
+        <p>Because Apple takes the payment, Apple issues the refunds &#8212; we have no way to do it from our side.</p>
+        <p>Request one at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, sign in, find Pace, and choose <strong>Request a refund</strong>.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>I got a new phone &#8212; where did my stuff go?</summary>
+      <div class="body">
+        <p>If you were <strong>signed in</strong>, sign in on the new phone and everything comes back.</p>
+        <p>If you used Pace <strong>as a guest</strong>, your data only ever lived on the old device &#8212; there was no cloud copy to restore. Sign in to keep a backup from now on.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>How do I add a friend?</summary>
+      <div class="body">
+        <p>Open <strong>Socials &#8594; Add friend</strong> and send a request to their email address. Nothing is shared until <strong>they accept</strong> &#8212; a request on its own connects nothing.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>What can my friends actually see?</summary>
+      <div class="body">
+        <p>Only what you choose to share, and never the details. A friend can see <strong>that</strong> you're busy at 2pm &#8212; never <strong>what</strong> the event is. Titles are never sent.</p>
+        <p>Location is <strong>off by default</strong> and always time-limited. <strong>Ghost mode</strong> makes you invisible and pauses every share at once.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Do you track me or sell my data?</summary>
+      <div class="body">
+        <p>No. Pace has <strong>no ads, no third-party analytics, and no tracking of any kind</strong>. We don't sell or share your data, and we never will.</p>
+        <p>Pace is local-first: your data lives on your phone, and only syncs to the cloud if you sign in. The full details are in the <a href="https://claude.ai/code/artifact/62d4d83c-ae05-4d69-9bca-0bb9b8263531">Privacy Policy</a>.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Something's broken</summary>
+      <div class="body">
+        <p>Email <a href="mailto:support@pacehq.com?subject=Pace%20bug">support@pacehq.com</a> with what you were doing, what you expected, and what happened instead. Your <strong>device</strong> and <strong>iOS version</strong> help a lot.</p>
+      </div>
+    </details>
+  </div>
+
+  <footer>
+    <span>Pace</span>
+    <a href="https://claude.ai/code/artifact/62d4d83c-ae05-4d69-9bca-0bb9b8263531">Privacy Policy</a>
+    <a href="https://claude.ai/code/artifact/a9b38c8a-f910-484f-ba17-076325727383">Terms of Service</a>
+    <a href="mailto:support@pacehq.com">support@pacehq.com</a>
+  </footer>
+</main>
+  <footer>
+    <span>Pace</span>
+    <a href="index.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a>
+    <a href="mailto:support@pacehq.com">support@pacehq.com</a>
+  </footer>
+</div></body></html>
